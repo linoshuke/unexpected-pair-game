@@ -1,0 +1,102 @@
+{
+	"name": "Logic",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 463593999428572,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [],
+			"sid": 120300479070169,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PlayerHuman",
+							"sid": 137607247721227,
+							"parameters": {
+								"instance-variable": "IsAttacking"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PlayerHuman",
+							"sid": 658192796842152,
+							"parameters": {
+								"instance-variable": "IsAttacking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "PlayerHuman",
+							"sid": 173946683688901,
+							"parameters": {
+								"object": "HitBoxAttack",
+								"layer": "\"Game\"",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 793330510043024
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 988284535940696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "PlayerHuman",
+					"sid": 256124909364457,
+					"parameters": {
+						"animation": "\"Attack\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "PlayerHuman",
+					"sid": 426361977653133,
+					"parameters": {
+						"instance-variable": "IsAttacking",
+						"value": "false"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HitBoxAttack",
+					"sid": 993691525787224
+				}
+			],
+			"sid": 822772241268416
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 998530207389962
+		}
+	],
+	"sid": 589723561680728
+}
