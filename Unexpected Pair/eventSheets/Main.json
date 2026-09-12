@@ -1,0 +1,56 @@
+{
+	"name": "Main",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "WorldState",
+			"type": "string",
+			"initialValue": "human",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 396112712759645
+		},
+		{
+			"eventType": "variable",
+			"name": "ScrollSpeed",
+			"type": "number",
+			"initialValue": "150",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 632751072896253
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerHP",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 366522400158344
+		},
+		{
+			"eventType": "variable",
+			"name": "CoinCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 213015595920121
+		},
+		{
+			"eventType": "variable",
+			"name": "DistanceScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 827186470066148
+		}
+	],
+	"sid": 521573723725834
+}
