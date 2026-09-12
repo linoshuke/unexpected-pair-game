@@ -1,0 +1,10 @@
+# Player Sprites
+
+Folder ini untuk sprite karakter player.
+
+## Format yang dibutuhkan:
+- Mode 1 (Running): Idle, Run, Jump, Attack animations
+- Mode 2 (Flying): Idle, Float, Shoot animations
+- Transition animation antara mode
+
+Lihat `docs/ASSET_GUIDE.md` untuk detail lengkap naming convention dan specs.

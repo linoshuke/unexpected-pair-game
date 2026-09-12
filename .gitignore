@@ -1,0 +1,34 @@
+# Construct 3 specific
+*.autosave.c3p
+*.backup.c3p
+*.tmp.c3p
+~*.c3p
+
+# Exports (optional - uncomment if you don't want to track builds)
+# exports/
+
+# Backups
+backups/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*~
+*.swp
+*.swo
